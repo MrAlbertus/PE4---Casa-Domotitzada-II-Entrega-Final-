@@ -4,8 +4,6 @@ import java.util.Scanner;
 
 public class appdomotica {
 
-    static int status;
-    static int tempcount;
     static boolean statusH1,statusH2,statusH3,statusBany,StatusCuina,StatusMenjador;
     static boolean statusH12,statusH22,statusH32,statusBany2,StatusCuina2,StatusMenjador2;
     static boolean statusH13,statusH23,statusH33,statusBany3,StatusCuina3,StatusMenjador3;
@@ -20,25 +18,19 @@ public class appdomotica {
     String menu5 = "";
     String menutemperatura = "";
     String menutemperatura2 = "";
-    String menucortines = "";
     Boolean encendre = null;
     Boolean obrir = null;
-    int bucle = 40;
     String hab = "";
     String resposta = "";
     String resposta2 = "";
     String resposta3 = "";
     String resposta4 = "";
-    String resposta5 = "";
     String respostacamara = "";
-    int respostatemp = 0;
-    int temperatura = 23;
     String hab3 = "";
     String hab4 = "";
     Boolean estatcamaras = null;
     Boolean fornestat = false;
     int temps = 0;
-    String menucamara = "";
 
     //menu principal
     Scanner Scanner1 = new Scanner(System.in);
@@ -120,11 +112,11 @@ public class appdomotica {
 
             case "b":
                     do {
-    System.out.println("------------------------------");
-    System.out.println("a.- Escull una habitació");
-    System.out.println("b.- Estat Temperatures");
-    System.out.println("d.- Sortir");
-    System.out.println("------------------------------");
+                        System.out.println("------------------------------");
+                        System.out.println("a.- Escull una habitació");
+                        System.out.println("b.- Estat Temperatures");
+                        System.out.println("d.- Sortir");
+                        System.out.println("------------------------------");
 
     menutemperatura = Scanner1.next();
 
@@ -372,7 +364,7 @@ public class appdomotica {
         }
     
     while(!(menu.equals("f")));
-
+    
 
         
 
@@ -445,5 +437,3 @@ public class appdomotica {
         }  
     }
 }
-
-//FALTA ARREGLAR LA PART DE LAS CAMARAS Y TEMPERATURA, QUEDA RÉS
